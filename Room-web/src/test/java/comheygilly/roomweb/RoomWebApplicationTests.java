@@ -1,13 +1,13 @@
-package com.HeyGilly.personalspring;
+package comheygilly.roomweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PersonalSpringApplicationTests {
+class RoomWebApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
