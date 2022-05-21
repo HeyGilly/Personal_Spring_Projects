@@ -1,7 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <head th:insert="fragment :: head ('rooms | practice')"></head>
-    <body>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
+        <title>Rooms | practice</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Personal StyleSheet -->
+        <link rel="stylesheet" href="/static/css/personalStyleSheet.css">
+    </head>
+    <body class="container-fluid pb-5">
+        <!--Navigation-->
+        <nav th:fragment="navbar" class="navbar navbar-light bg-dark container mx-auto mt-5 rounded shadow border border-white">
+            <!-- awesome navbar goes here -->
+            <a class="navbar-brand text-white" href="#">HeyGilly</a>
+        </nav>
 
+        <!--Header-->
+        <h1 class="text-center my-5">Hello World</h1>
+
+        <!-- Display of Room information -->
+        <main class="container-fluid my-5">
+            <div class="d-flex flex-wrap justify-content-center w-100">
+                <!-- Going to get a single room from the model, then an element of rooms     -->
+                <!-- now how we define room is below.   -->
+                <div class=" bg-dark roomInfoContainer w-25 m-2 text-white rounded" th:each="room:${rooms}">
+                    <!--  Remember we are pulling from the MODEL -->
+                    <h2 th:text="${room.name}" class="text-center">Heading</h2>
+                    <p th:text="${room.number}" class="text-center">Room Number</p>
+                    <p th:text="${room.info}">Room Info</p>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+        <!--Footer-->
+        <footer class="fixed-bottom w-100 bg-dark text-center text-lg-start z-index-5">
+            <!-- Copyright -->
+            <div class="text-center p-3 text-white">
+                © 2022 Copyright:
+                <a class="text-light" href="https://github.com/HeyGilly">HeyGilly</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </body>
 </html>
