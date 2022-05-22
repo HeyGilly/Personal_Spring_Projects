@@ -2,7 +2,7 @@
 
 ### Roadmap
 * [X] Room-web
-* [ ] University
+* [ ] Simple Web
 
 
 
@@ -13,4 +13,5 @@
     * Bootstrap
     * Google Fonts
   * (!) Keep having problems with my fragments, I am not sure why they are not working but will check out later at a different time. spent way to much time on that.
-* University
+* Simple Web
+  * the focus of this guide is securing the page with LDAP
