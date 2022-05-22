@@ -2,7 +2,7 @@
 
 ### Roadmap
 * [X] Room-web
-* [] University
+* [ ] University
 
 
 
